@@ -41,7 +41,7 @@
 			<uniqueVersion>false</uniqueVersion>
 			<id>twuni-releases</id>
 			<name>Twuni Software Releases</name>
-			<url>http://maven.twuni.org/libs-release-local</url>
+			<url>http://maven.twuni.org/repository/libs-release-local</url>
 			<layout>default</layout>
 		</repository>
 
@@ -49,7 +49,7 @@
 			<uniqueVersion>true</uniqueVersion>
 			<id>twuni-snapshots</id>
 			<name>Twuni Software Snapshots</name>
-			<url>http://maven.twuni.org/libs-snapshot-local</url>
+			<url>http://maven.twuni.org/repository/libs-snapshot-local</url>
 			<layout>default</layout>
 		</snapshotRepository>
 
@@ -68,7 +68,7 @@
 			</snapshots>
 			<id>twuni-releases</id>
 			<name>Twuni Software Releases</name>
-			<url>http://maven.twuni.org/libs-release</url>
+			<url>http://maven.twuni.org/repository/libs-release</url>
 			<layout>default</layout>
 		</repository>
 
@@ -83,7 +83,7 @@
 			</snapshots>
 			<id>twuni-snapshots</id>
 			<name>Twuni Software Snapshots</name>
-			<url>http://maven.twuni.org/libs-snapshot</url>
+			<url>http://maven.twuni.org/repository/libs-snapshot</url>
 			<layout>default</layout>
 		</repository>
 

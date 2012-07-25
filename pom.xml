@@ -44,7 +44,7 @@
 			<uniqueVersion>false</uniqueVersion>
 			<id>twuni-releases</id>
 			<name>Twuni Software Releases</name>
-			<url>http://maven.twuni.org/repository/libs-release-local</url>
+			<url>https://maven.twuni.org/repository/libs-release-local</url>
 			<layout>default</layout>
 		</repository>
 
@@ -52,7 +52,7 @@
 			<uniqueVersion>true</uniqueVersion>
 			<id>twuni-snapshots</id>
 			<name>Twuni Software Snapshots</name>
-			<url>http://maven.twuni.org/repository/libs-snapshot-local</url>
+			<url>https://maven.twuni.org/repository/libs-snapshot-local</url>
 			<layout>default</layout>
 		</snapshotRepository>
 
@@ -71,7 +71,7 @@
 			</snapshots>
 			<id>twuni-releases</id>
 			<name>Twuni Software Releases</name>
-			<url>http://maven.twuni.org/repository/libs-release</url>
+			<url>https://maven.twuni.org/repository/libs-release</url>
 			<layout>default</layout>
 		</repository>
 
@@ -86,7 +86,7 @@
 			</snapshots>
 			<id>twuni-snapshots</id>
 			<name>Twuni Software Snapshots</name>
-			<url>http://maven.twuni.org/repository/libs-snapshot</url>
+			<url>https://maven.twuni.org/repository/libs-snapshot</url>
 			<layout>default</layout>
 		</repository>
 
@@ -99,7 +99,6 @@
 			<plugins>
 
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
 					<configuration>
 						<encoding>UTF-8</encoding>
@@ -109,8 +108,14 @@
 				</plugin>
 
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-resources-plugin</artifactId>
+					<configuration>
+						<encoding>UTF-8</encoding>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<artifactId>maven-javadoc-plugin</artifactId>
 					<configuration>
 						<encoding>UTF-8</encoding>
 					</configuration>

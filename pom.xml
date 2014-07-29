@@ -8,8 +8,8 @@
 	<version>1.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-  <name>A Twuni Maven Project</name>
-  <description>This parent POM provides the generic boilerplate stuff to assist in building and deploying a clean Maven project.</description>
+	<name>A Twuni Maven Project</name>
+	<description>This parent POM provides the generic boilerplate stuff to assist in building and deploying a clean Maven project.</description>
 
 	<scm>
 		<developerConnection>scm:git:git@github.com:twuni/maven-parent.git</developerConnection>
@@ -61,33 +61,41 @@
 	<repositories>
 
 		<repository>
+
 			<releases>
 				<enabled>true</enabled>
 				<updatePolicy>never</updatePolicy>
 				<checksumPolicy>warn</checksumPolicy>
 			</releases>
+
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
+
 			<id>twuni-releases</id>
 			<name>Twuni Software Releases</name>
 			<url>https://maven.twuni.org/repository/libs-release</url>
 			<layout>default</layout>
+
 		</repository>
 
 		<repository>
+
 			<releases>
 				<enabled>false</enabled>
 			</releases>
+
 			<snapshots>
 				<enabled>true</enabled>
 				<updatePolicy>always</updatePolicy>
 				<checksumPolicy>warn</checksumPolicy>
 			</snapshots>
+
 			<id>twuni-snapshots</id>
 			<name>Twuni Software Snapshots</name>
 			<url>https://maven.twuni.org/repository/libs-snapshot</url>
 			<layout>default</layout>
+
 		</repository>
 
 	</repositories>
@@ -125,48 +133,52 @@
 
 		</pluginManagement>
 
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-source-plugin</artifactId>
-        <version>2.1.2</version>
-        <executions>
-          <execution>
-            <id>attach-sources</id>
-            <goals>
-              <goal>jar-no-fork</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.8.1</version>
-        <executions>
-          <execution>
-            <id>attach-javadocs</id>
-            <goals>
-              <goal>jar</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-gpg-plugin</artifactId>
-        <version>1.4</version>
-        <executions>
-          <execution>
-            <id>sign-artifacts</id>
-            <phase>verify</phase>
-            <goals>
-              <goal>sign</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.1.2</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.8.1</version>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>1.4</version>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+		</plugins>
 
 	</build>
 

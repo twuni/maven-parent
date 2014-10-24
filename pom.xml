@@ -44,7 +44,7 @@
 			<uniqueVersion>false</uniqueVersion>
 			<id>twuni-releases</id>
 			<name>Twuni Software Releases</name>
-			<url>https://maven.twuni.org/repository/libs-release-local</url>
+			<url>scp://maven@maven.twuni.org/srv/maven/twuni.org/repository/libs-release-local</url>
 			<layout>default</layout>
 		</repository>
 
@@ -52,7 +52,7 @@
 			<uniqueVersion>true</uniqueVersion>
 			<id>twuni-snapshots</id>
 			<name>Twuni Software Snapshots</name>
-			<url>https://maven.twuni.org/repository/libs-snapshot-local</url>
+			<url>scp://maven@maven.twuni.org/srv/maven/twuni.org/repository/libs-snapshot-local</url>
 			<layout>default</layout>
 		</snapshotRepository>
 

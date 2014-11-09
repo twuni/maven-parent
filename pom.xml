@@ -42,7 +42,7 @@
 
 		<repository>
 			<uniqueVersion>false</uniqueVersion>
-			<id>twuni-releases</id>
+			<id>twuni-deploy-releases</id>
 			<name>Twuni Software Releases</name>
 			<url>scp://maven@maven.twuni.org/srv/maven/twuni.org/repository/libs-release-local</url>
 			<layout>default</layout>
@@ -50,7 +50,7 @@
 
 		<snapshotRepository>
 			<uniqueVersion>true</uniqueVersion>
-			<id>twuni-snapshots</id>
+			<id>twuni-deploy-snapshots</id>
 			<name>Twuni Software Snapshots</name>
 			<url>scp://maven@maven.twuni.org/srv/maven/twuni.org/repository/libs-snapshot-local</url>
 			<layout>default</layout>
@@ -147,6 +147,12 @@
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.8.2</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
 				<version>2.1.2</version>
 				<executions>
@@ -186,6 +192,9 @@
 						</goals>
 					</execution>
 				</executions>
+				<configuration>
+					<useAgent>true</useAgent>
+				</configuration>
 			</plugin>
 
 		</plugins>
